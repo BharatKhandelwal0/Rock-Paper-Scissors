@@ -1,0 +1,616 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Luckiest+Guy&family=Michroma&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Savate:ital,wght@0,200..900;1,200..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    -webkit-tap-highlight-color: transparent;
+    user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.tagline {
+    display: flex;
+    margin: 7px 15px;
+    position: fixed;
+    top: 68px;
+    right: 4px;
+    z-index: 11;
+}
+
+.name {
+    font-family: "Source Code Pro", monospace;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-size: 17px;
+    padding-top: 1px;
+    font-style: normal;
+    color: #101422;
+
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    width: 100%;
+    color: beige;
+    background-color: #172A3A;
+    font-family: "Michroma", sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    font-style: normal;
+    filter: drop-shadow(5px 3px 4px black);
+    position: absolute;
+    z-index: 10;
+}
+
+.line {
+    position: relative;
+    z-index: 1;
+    height: 100vh;
+    width: 3px;
+    background-color: #172A3A;
+    border: none;
+}
+
+img {
+    height: 30vmin;
+    margin: 0.5rem;
+    border-radius: 50%;
+    background-color: #848872;
+    border: 3px solid #2e2f27;
+
+
+
+}
+
+img:hover {
+    background-color: #432534;
+    border: 3px solid #1b0f15;
+}
+
+img:active {
+    background-color: #502d3e;
+}
+
+.nameRock,
+.namePaper,
+.nameScissors {
+    position: absolute;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 7vmin;
+    color: aliceblue;
+    top: 19vmin;
+    text-shadow: 5px 5px 7px #000000;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    height: 50vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #333745;
+    position: relative;
+
+}
+
+.msg-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-size: 1.5rem;
+}
+
+#msg {
+    border-radius: 15rem;
+    padding: 10px 50px;
+    border: 3px solid #2c2d21;
+    color: #1f2203;
+    background-color: #AAAE7F;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.activity {
+    width: 89vw;
+    height: 60vh;
+}
+
+.scoreBoard {
+    width: 40vw;
+    height: 45vh;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+}
+
+#user-score {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 1vmin 5vmin;
+    border: 3px solid #022821;
+    color: #fff;
+    background-color: #056552;
+    border-bottom-left-radius: 2rem;
+    font-family: "Savate", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+#comp-score {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    padding: 1vmin 5vmin;
+    border: 3px solid #022821;
+    color: #fff;
+    background-color: #056552;
+    border-bottom-right-radius: 2rem;
+    font-family: "Savate", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.you {
+    font-size: 30px;
+    padding: 1vmin 5vmin;
+    border: 3px solid #0c161e;
+    color: #fff;
+    background-color: #172A3A;
+    border-top-left-radius: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.comp {
+    font-size: 30px;
+    padding: 1vmin 5vmin;
+    border: 3px solid #0c161e;
+    color: #fff;
+    background-color: #172A3A;
+    border-top-right-radius: 2rem;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.winnerSec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    font-size: 1.5rem;
+}
+
+.winner {
+    border-radius: 15rem;
+    padding: 10px 50px;
+    border: 3px solid #2c2d21;
+    color: #1f2203;
+    background-color: #AAAE7F;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 12vh;
+    font-size: 1.5rem;
+}
+
+.resetBtn {
+    border: 3px solid #200e0f;
+    border-radius: 1rem;
+    padding: 10px 50px;
+    color: #f1d2d4;
+    background-color: #411b1e;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+.resetBtn:hover {
+    border: 3px solid #98686c;
+}
+
+.resetBtn:active {
+    background-color: #833138;
+}
+
+.moves {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+    gap: 1rem;
+
+}
+
+.userCmprmt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.userMove {
+    font-size: 30px;
+    padding: 1vmin 5vmin;
+    border: 3px solid #270902;
+    color: #fff;
+    background-color: #A72608;
+    border-radius: 1rem;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.userMoveName {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 1vmin 5vmin;
+    border: 3px solid #181710;
+    color: #181710;
+    background-color: #B9B296;
+    border-radius: 1rem;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.compCmprmt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+}
+
+.compMove {
+    font-size: 30px;
+    padding: 1vmin 5vmin;
+    border: 3px solid #270902;
+    color: #fff;
+    background-color: #A72608;
+    border-radius: 1rem;
+    font-family: "Comic Neue", cursive;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.compMoveName {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding: 1vmin 5vmin;
+    border: 3px solid #181710;
+    color: #181710;
+    background-color: #B9B296;
+    border-radius: 1rem;
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 200;
+    font-style: normal;
+}
+
+@media (max-width : 1182px) {
+    img {
+        height: 25vmin;
+    }
+
+    .nameRock {
+        font-size: 5vmin;
+    }
+
+    .namePaper {
+        font-size: 5vmin;
+    }
+
+    .nameScissors {
+        font-size: 5vmin;
+    }
+
+    .you {
+        padding: 0.5vmin 3vmin;
+    }
+
+    .comp {
+        padding: 0.5vmin 3vmin;
+    }
+
+    #user-score {
+        padding: 0.5vmin 3vmin;
+    }
+
+    #comp-score {
+        padding: 0.5vmin 3vmin;
+    }
+}
+
+@media (max-width : 1003px) {
+    img {
+        height: 20vmin;
+    }
+
+    .choice {
+        height: 40vh;
+    }
+
+    .nameRock {
+        font-size: 3vmin;
+        top: 148px;
+    }
+
+    .namePaper {
+        font-size: 3vmin;
+        top: 148px;
+    }
+
+    .nameScissors {
+        font-size: 3vmin;
+        top: 148px;
+    }
+
+}
+
+@media (max-width : 837px) {
+    img {
+        height: 20vmin;
+    }
+
+    .choice {
+        height: 40vh;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+}
+
+@media (max-width : 817px) {
+    img {
+        height: 17vmin;
+    }
+
+    .choice {
+        height: 40vh;
+    }
+
+    .scoreBoard {
+        height: 40vh;
+    }
+
+    .board {
+        height: 40vh;
+    }
+
+    .you {
+        padding: 0.4vmin 2vmin;
+    }
+
+    .comp {
+        padding: 0.4vmin 2vmin;
+    }
+
+    #user-score {
+        padding: 0.4vmin 2vmin;
+    }
+
+    #comp-score {
+        padding: 0.4vmin 2vmin;
+    }
+}
+
+@media (max-width : 721px) {
+    h1 {
+        font-size: 25px;
+    }
+
+    .container {
+        flex-direction: column;
+    }
+
+    .line {
+        display: none;
+    }
+
+    .nameRock {
+        display: none;
+    }
+
+    .namePaper {
+        display: none;
+    }
+
+    .nameScissors {
+        display: none;
+    }
+
+    img {
+        height: 25vmin;
+    }
+
+    .msg-container {
+        height: 15vh;
+    }
+
+    .choice {
+        height: 65vh;
+        width: 100%;
+        align-items: end;
+    }
+
+    .choices {
+        height: 40vh;
+    }
+
+    .activity {
+        width: 100%;
+        height: 65vh;
+    }
+
+    .board {
+        height: 35vh;
+    }
+
+    .msg-container {
+        height: 10vh;
+    }
+
+    .moves {
+        height: 15vh;
+        gap: 0.5rem;
+    }
+
+    .userMove {
+        padding: 0.5vmin 3vmin;
+        font-size: 25px;
+    }
+
+    .compMove {
+        padding: 0.5vmin 3vmin;
+        font-size: 25px;
+    }
+
+    .userMoveName {
+        padding: 0.5vmin 2vmin;
+        font-size: 25px;
+    }
+
+    .compMoveName {
+        padding: 0.5vmin 2vmin;
+        font-size: 25px;
+    }
+
+    .scoreSec {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+
+    .scoreBoard {
+        align-items: center;
+        height: 23vh;
+    }
+
+    .winnerSec {
+        align-items: center;
+        height: 23vh;
+    }
+}
+
+@media (max-width : 493px) {
+    h1 {
+        font-size: 22px;
+    }
+
+    .choices {
+        height: 33vh;
+    }
+
+    .moves {
+        height: 22vh;
+    }
+}
+
+@media (max-width : 411px) {
+    h1 {
+        font-size: 20px;
+    }
+
+    .choices {
+        height: 28vh;
+    }
+
+    .msg-container {
+        height: 18vh;
+    }
+
+    .board {
+        height: 40vh;
+    }
+
+    .you {
+        padding: 0.7vmin 2.5vmin;
+        font-size: 20px;
+        border-top-left-radius: 1rem;
+    }
+
+    .comp {
+        padding: 0.7vmin 2.5vmin;
+        font-size: 20px;
+        border-top-right-radius: 1rem;
+    }
+
+    #user-score {
+        padding: 0.7vmin 2.5vmin;
+        font-size: 20px;
+        border-bottom-left-radius: 1rem;
+    }
+
+    #comp-score {
+        padding: 0.7vmin 2.5vmin;
+        font-size: 20px;
+        border-bottom-right-radius: 1rem;
+    }
+
+    .winner {
+        border-radius: 1.4rem;
+    }
+}
+
+@media (max-width : 355px) {
+    h1 {
+        font-size: 17px;
+    }
+}
+@media (max-width: 360px) {
+        .name {
+            font-size: 12px;
+        }
+    }
